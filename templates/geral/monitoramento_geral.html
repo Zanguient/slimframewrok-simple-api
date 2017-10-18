@@ -1,0 +1,46 @@
+{% extends "layoutPadrao.html" %}
+
+{% block content %}
+
+
+<div class="table-primary">
+	<div class="table-header">
+		<div class="table-caption">
+			Primary Table
+		</div>
+	</div>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Username</th>
+			</tr>
+		</thead>
+		<tbody>
+
+      {% for noticia in noticias %}
+        <tr>
+          <td>{{ noticia.nome }}</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+      {% else %}
+        <tr>
+          <td>Nada</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+      {% endfor %}
+
+		</tbody>
+	</table>
+	<div class="table-footer">
+		Footer
+	</div>
+</div>
+
+{% endblock content %}
