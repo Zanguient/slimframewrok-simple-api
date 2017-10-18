@@ -2,7 +2,7 @@
 
 function result($query = ''){
 
-    $mysqli = new mysqli('192.168.0.13', 'root', 'Agrnvst941142', 'agroweb');
+    $mysqli = new mysqli('192.168.0.13', 'xxx', 'xxx', 'xxx');
 
     if ($mysqli->connect_error) {
         die('Connect Error (' . $mysqli->connect_errno . ') '
